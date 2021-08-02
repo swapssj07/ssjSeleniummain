@@ -26,7 +26,7 @@ public class BRing2 {
 			Thread.sleep(2000);
 			
 			List<WebElement> menues2 = driver.findElements(By.xpath("//form[@id='delivery time']"));
-			Actions a2=new Actions(driver); 
+	//		Actions a2=new Actions(driver); 
 			for (WebElement menuName2 : menues2) {
 				System.out.println(menuName2.getText());
 				a.moveToElement(menuName2).build().perform();

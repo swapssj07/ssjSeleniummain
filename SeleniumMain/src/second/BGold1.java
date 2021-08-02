@@ -22,13 +22,13 @@ public class BGold1 {
 			a.moveToElement(menuName).build().perform();
 			Thread.sleep(2000);
 			List<WebElement> menues2 = driver.findElements(By.xpath("//span[@data-p='all-jewellery-goldcoins-plain-gold,m']"));
-			Actions a2=new Actions(driver); 
+		//	Actions a2=new Actions(driver); 
 			for (WebElement menuName2 : menues2) {
 				System.out.println(menuName2.getText());
 				a.moveToElement(menuName2).build().perform();
 				Thread.sleep(2000);
 				List<WebElement> menues3 = driver.findElements(By.xpath("//span[@data-p='gold-coins-weight-20gms,m']"));
-				Actions a3=new Actions(driver); 
+		//		Actions a3=new Actions(driver); 
 				for (WebElement menuName3 : menues3) {
 					System.out.println(menuName3.getText());
 					a.moveToElement(menuName3).build().perform();

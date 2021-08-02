@@ -27,7 +27,7 @@ public class BRing4 {
 			menuName.click();
 			
 			List<WebElement> menues2 = driver.findElements(By.xpath("//span[@data-displayname='22k']"));
-			Actions a2=new Actions(driver); 
+	//		Actions a2=new Actions(driver); 
 			for (WebElement menuName2 : menues2) {
 				System.out.println(menuName2.getText());
 				a.moveToElement(menuName2).build().perform();

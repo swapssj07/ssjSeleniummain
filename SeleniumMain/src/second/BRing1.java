@@ -27,7 +27,7 @@ public class BRing1 {
 			Thread.sleep(2000);
 			
 			List<WebElement> menues2 = driver.findElements(By.xpath("//span[@id='pchkbox']"));
-			Actions a2=new Actions(driver); 
+	//		Actions a2=new Actions(driver); 
 			for (WebElement menuName2 : menues2) {
 			WebElement count=driver.findElement(By.xpath("//span[@id='pchkbox']"));
 				System.out.println(count.getText());

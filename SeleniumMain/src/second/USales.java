@@ -25,7 +25,7 @@ public class USales {
 			a.moveToElement(menuName).build().perform();
 			Thread.sleep(2000);
 			List<WebElement> menues2 = driver.findElements(By.xpath("//li[@class='topnav_item saleunit']/descendant::span[text()='Wooden Sofa Sets']"));
-			Actions a2=new Actions(driver); 
+	//		Actions a2=new Actions(driver); 
 			for (WebElement menuName2 : menues2) {
 				System.out.println(menuName2.getText());
 				a.moveToElement(menuName2).build().perform();

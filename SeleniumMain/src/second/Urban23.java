@@ -1,6 +1,6 @@
 package second;
 
-import java.awt.Desktop.Action;
+//import java.awt.Desktop.Action;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
