@@ -32,5 +32,6 @@ public class Aleart1 {
 		a.accept();
 		Thread.sleep(2000);
 		System.out.println(driver.findElement(By.xpath("//span[@id='promptResult']")).getText());
+		
 	}
 }
