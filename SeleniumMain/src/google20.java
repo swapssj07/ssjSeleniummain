@@ -7,8 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class google20{
-public static void main(String[] args) throws InterruptedException {
+public class google20 {
+	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "./software/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -16,9 +16,9 @@ public static void main(String[] args) throws InterruptedException {
 		Thread.sleep(2000);
 		driver.findElement(By.name("q")).sendKeys("java", Keys.ENTER);
 		Thread.sleep(2000);
-		List<WebElement> links=driver.findElements(By.tagName("a"));
-		for(WebElement link : links) {
+		List<WebElement> links = driver.findElements(By.tagName("a"));
+		for (WebElement link : links) {
 			System.out.println(link.getText());
 		}
-}
+	}
 }

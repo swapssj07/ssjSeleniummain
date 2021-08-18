@@ -11,8 +11,8 @@ public class acti20 {
 		driver.manage().window().maximize();
 		driver.get("https://demo.actitime.com/login.do");
 		Thread.sleep(2000);
-		WebElement forgotPass=driver.findElement(By.linkText("Forgot your password?"));
+		WebElement forgotPass = driver.findElement(By.linkText("Forgot your password?"));
 		forgotPass.click();
-		
-}
+
+	}
 }

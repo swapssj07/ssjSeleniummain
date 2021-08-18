@@ -15,6 +15,5 @@ public class demo2 {
 		Thread.sleep(2000);
 		driver.navigate().refresh();
 	}
-	
 
 }

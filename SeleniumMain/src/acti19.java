@@ -11,15 +11,14 @@ public class acti19 {
 		driver.manage().window().maximize();
 		driver.get("https://demo.actitime.com/login.do");
 		Thread.sleep(2000);
-		WebElement user =driver.findElement(By.name("username"));
+		WebElement user = driver.findElement(By.name("username"));
 		user.sendKeys("admin");
-		WebElement pass=driver.findElement(By.name("pwd"));
+		WebElement pass = driver.findElement(By.name("pwd"));
 		pass.sendKeys("manager");
 		WebElement login = driver.findElement(By.id("loginButton"));
 		login.click();
 		Thread.sleep(2000);
 		System.out.println(driver.getTitle());
-		
 
 	}
 

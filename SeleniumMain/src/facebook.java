@@ -8,8 +8,7 @@ public class facebook {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.facebook.com/");
-		
-		}
-	
+
+	}
 
 }

@@ -13,5 +13,5 @@ public class facebook21 {
 		driver.findElement(By.xpath("//input[@data-testid='royal_email']")).sendKeys("swapnil");
 		driver.findElement(By.xpath("//input[@data-testid='royal_pass']")).sendKeys("12345678");
 		driver.findElement(By.xpath("//button[@name='login']")).click();
-}
+	}
 }

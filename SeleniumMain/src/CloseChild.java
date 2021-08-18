@@ -12,18 +12,15 @@ public class CloseChild {
 		driver.manage().window().maximize();
 		driver.get("https://www.naukri.com/");
 		Thread.sleep(2000);
-		Set<String> wins= driver.getWindowHandles();
+		Set<String> wins = driver.getWindowHandles();
 		System.out.println(wins.getClass());
-		
-		String parent =driver.getWindowHandle();
+
+		String parent = driver.getWindowHandle();
 		wins.remove(parent);
-		for (String id :wins) {
+		for (String id : wins) {
 			driver.switchTo().window(id);
 			Thread.sleep(1000);
 			driver.close();
 		}
-		}
 	}
-	
-
-
+}

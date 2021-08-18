@@ -11,9 +11,9 @@ public class facebook19 {
 		driver.manage().window().maximize();
 		driver.get("https://www.facebook.com/");
 		Thread.sleep(2000);
-		WebElement user =driver.findElement(By.id("email"));
+		WebElement user = driver.findElement(By.id("email"));
 		user.sendKeys("swapnil");
-		WebElement pass=driver.findElement(By.id("pass"));
+		WebElement pass = driver.findElement(By.id("pass"));
 		pass.sendKeys("12345");
 		WebElement login = driver.findElement(By.name("login"));
 		login.click();

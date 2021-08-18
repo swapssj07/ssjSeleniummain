@@ -11,5 +11,5 @@ public class facebook20 {
 		driver.get("https://en-gb.facebook.com/");
 		Thread.sleep(2000);
 		driver.findElement(By.partialLinkText("Forgotten")).click();
-}
+	}
 }

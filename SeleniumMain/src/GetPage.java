@@ -9,7 +9,6 @@ public class GetPage {
 		driver.manage().window().maximize();
 		driver.get("https://www.google.com/");
 		System.out.println(driver.getPageSource());
-	
-	}	
-}
 
+	}
+}

@@ -11,14 +11,13 @@ public class Naukri {
 		driver.manage().window().maximize();
 		driver.get("https://www.naukri.com/");
 		Thread.sleep(2000);
-		Set<String> wins= driver.getWindowHandles();
-		for(String id:wins) {
+		Set<String> wins = driver.getWindowHandles();
+		for (String id : wins) {
 			System.out.println(id);
 			driver.switchTo().window(id);
 			Thread.sleep(2000);
 			driver.close();
 		}
 	}
-	
 
 }

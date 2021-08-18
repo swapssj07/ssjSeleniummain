@@ -12,8 +12,8 @@ public class google19 {
 		driver.manage().window().maximize();
 		driver.get("https://www.google.com/");
 		Thread.sleep(2000);
-		WebElement search =driver.findElement(By.name("q"));
-		search.sendKeys("selenium",Keys.ENTER);
+		WebElement search = driver.findElement(By.name("q"));
+		search.sendKeys("selenium", Keys.ENTER);
 
 	}
 

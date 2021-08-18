@@ -12,18 +12,15 @@ public class Demo15 {
 		driver.manage().window().maximize();
 		driver.get("https://www.naukri.com/");
 		Thread.sleep(2000);
-		Set<String> wins= driver.getWindowHandles();
+		Set<String> wins = driver.getWindowHandles();
 		System.out.println(wins.getClass());
-		
-		ArrayList<String> lst=new ArrayList<>(wins);
-		for(int i=lst.size()-1; i >=0; i--) {
-			String id=lst.get(i);
+
+		ArrayList<String> lst = new ArrayList<>(wins);
+		for (int i = lst.size() - 1; i >= 0; i--) {
+			String id = lst.get(i);
 			driver.switchTo().window(id);
 			Thread.sleep(2000);
 			driver.close();
 		}
-		}
 	}
-	
-
-
+}
